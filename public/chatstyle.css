@@ -1,0 +1,127 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    background-color: #022c43 ;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.left{
+    display: flex;
+    justify-content: start;
+   
+}
+
+.right{
+    display: flex;
+    justify-content: end;
+
+}
+
+#info pre{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    white-space: pre-wrap;
+}
+
+#info{
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 60%;
+    min-width: 15%;
+    margin: 5px;
+    background-color: #3a5c6e;
+    color: white;
+    display: inline;
+    word-wrap: break-word;
+    text-align: start;
+    animation: slide 0.5s linear;
+}
+@keyframes slide {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.clipboard{
+    cursor: pointer;
+}
+
+
+
+
+
+
+#heading{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    left: 0;
+    background-color: #174359 ;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#chatbox{
+    margin-top:150px;
+    margin-bottom: 100px;
+    overflow-y: auto;
+}
+
+
+#inp-group{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    left: 0;
+}
+#inp-group textarea{
+width: 80%;
+border: none;
+outline: none;
+background-color: #002539 ;
+color: white;
+font-size: 1rem;
+overflow: hidden;
+resize: none;
+font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#inp-group button{
+    width: 20%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    background-color: #002539 ;
+    color: white;
+    outline: none;
+    border: none;
+    text-align: end;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
